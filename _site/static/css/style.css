@@ -1,0 +1,108 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3860479, 2020-01-27T13:37:41-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Harbour-Medium by Alias Collection
+ * URL: https://www.myfonts.com/fonts/fw-alias/harbour/medium/
+ * Copyright: &#x00A9; 1998 Gareth Hague
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3ae7ff");
+
+@font-face {
+    font-family: 'Harbour-Medium';
+    src: url('../webfonts/3AE7FF_0_0.eot');
+    src: url('../webfonts/3AE7FF_0_0.eot?#iefix') 
+        format('embedded-opentype'),url('../webfonts/3AE7FF_0_0.woff2') 
+        format('woff2'),url('../webfonts/3AE7FF_0_0.woff') 
+        format('woff'),url('../webfonts/3AE7FF_0_0.ttf') 
+        format('truetype');
+}
+
+.harbour-md {
+    font-family: Harbour-Medium;
+}
+
+.merc-disp {
+    font-family: "Mercury Display A", "Mercury Display B";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.merc-book {
+    font-family: "Mercury SSm A", "Mercury SSm B";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.merc-g1 {
+    font-family: "Mercury Text G1 A", "Mercury Text G1 B";
+    font-style: normal;
+    font-weight: 400;
+}
+
+details > summary {
+    list-style: none;
+}
+
+details > summary {
+    outline: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.bg-beige {
+    background-color: #F2EFE5;
+}
+
+.text-purple {
+    color: #7c667c;
+}
+
+.text-black {
+    color: #4a4b45;
+}
+
+.text-orange {
+    color: #C13E36;
+}
+
+.outline {
+    -webkit-text-stroke-color: #4a4b45;
+    -webkit-text-stroke-width: 1px;
+}
+
+header {
+    border-bottom: 1px solid #4a4b45;
+}
+
+.asterisk {
+    transform: rotate(30deg);
+}
+
+.fit {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.fonts-loaded .fit {
+    font-family: Harbour-Medium;
+}
+
+.essay-body > * {
+    margin-bottom: 1rem;
+}

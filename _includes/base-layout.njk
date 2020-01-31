@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NVB</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6249038/7082012/css/fonts.css" />
+    <link rel="stylesheet" href="/static/css/MyFontsWebfontsKit.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="bg-beige text-gray-900 min-h-screen">
+        <header class="text-black">
+                <details>
+                    <summary class="px-2">
+                        <p class="harbour-md pt-4 pb-2 text-center tracking-widest leading-none">MENU</p>
+                    </summary>
+                    <nav class="harbour-md text-center pt-2 pb-4">
+                        <ul class="tracking-wide">
+                            <li class="leading-loose">
+                                <p class="text-4xl"> &#x2020; </p>
+                            </li>
+                            <li class="leading-loose">
+                                <a href="/"> home </a>
+                            </li>
+                            {%- for newest in collections.newest %}
+                            <li class="leading-loose">
+                                <a href="{{newest.url}}">newest essay</a>
+                            </li>
+                            {%- endfor -%}
+                            <li class="leading-loose">
+                                <a href="/archives">archives</a>
+                            </li>
+                            <li class="leading-loose">
+                                <a href="/about">about the name</a>
+                            </li>
+                            <li class="leading-loose">
+                                <a href="/colophon">colophon</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </details>
+        </header>
+
+        <main class="merc-book text-black min-h-100">
+            <div class="container mx-auto p-3 pb-3 max-w-2xl">
+                {% if page_title %}
+                    <p class="harbour-md text-3xl leading-tight mt-16 mb-8 text-purple outline">{{ page_title }}</p>
+                {% endif %}
+                {{ content | safe }}
+            </div>
+        </main>
+
+        <script src="/static/js/fitty.min.js"></script>
+        <script>
+            fitty('.fit');
+        </script>
+</body>
+</html>

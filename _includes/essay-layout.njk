@@ -1,0 +1,14 @@
+---
+layout: base-layout.njk
+---
+
+<p class="harbour-md text-2xl leading-tight mt-16 mb-2 text-orange outline">{{ essay_title }}</p>
+
+<p class="italic mt-4 mb-2">
+    {{ verse }}
+</p>
+<p class="harbour-md italic mb-10">&mdash;{{ citation }}</p>
+
+{{ content | safe }}
+
+<p class="mb-6 mt-8 text-right italic">&mdash;<time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time></p>
