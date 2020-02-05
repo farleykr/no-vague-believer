@@ -18,7 +18,7 @@
     function native() {
 
         // load our custom Harbour font
-        var fontHarbour = new FontFace('harbour', 'url(/static/webfonts/static/webfonts/3AE7FF_0_0.woff2)', {
+        var fontHarbour = new FontFace('harbour', 'url(/static/webfonts/3AE7FF_0_0.woff2)', {
         });
         document.fonts.add(fontHarbour);
         fontHarbour.load();
@@ -31,7 +31,7 @@
     function fallback() {
 
         var style = document.createElement('style');
-        style.textContent = '@font-face { font-family: harbour; src: url(/static/webfonts/static/webfonts/3AE7FF_0_0.woff2) format("woff2");}'
+        style.textContent = '@font-face { font-family: harbour; src: url(/static/webfonts3AE7FF_0_0.woff2) format("woff2");}'
         document.head.appendChild(style);
 
         var s = document.createElement('script');
