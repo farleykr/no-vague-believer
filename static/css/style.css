@@ -99,10 +99,6 @@ header {
     white-space: nowrap;
 }
 
-.fonts-loaded .fit {
-    font-family: Harbour-Medium;
-}
-
 .essay-body > * {
     margin-bottom: 1rem;
 }
