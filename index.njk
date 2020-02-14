@@ -2,7 +2,7 @@
 layout: base-layout.njk
 ---
 
-<div class="py-20 merc-disp text-xl max-w-xl text-center mx-auto">
+<div class="py-12 merc-disp text-xl max-w-xl text-center mx-auto">
     <p class="naz-roman text-purple outline leading-none fit">Farley Reynolds</p>
     <p class="mt-4 mb-5 harbour leading-none text-xl tracking-wider">&mdash; ain't &mdash;</p>
 
@@ -13,9 +13,9 @@ layout: base-layout.njk
     <p class="naz-roman text-2xl sm:text-3xl tracking-wider mb-8">Essays from the Standpoint <br > of Christian Orthodoxy</p>
 
     {%- for newest in collections.newest %}
-        <p class="harbour text-2xl">Read the <a href="{{ newest.url }}" class="underline text-purple">newest essay</a></p>
+        <p class="harbour">Read the <a href="{{ newest.url }}" class="underline text-purple">newest essay</a></p>
         <p class="harbour italic leading-none my-2">or</p>
     {%- endfor -%}
     
-    <p class="harbour text-2xl">Visit the <a href="/archives" class="underline text-purple">archives</a></p>
+    <p class="harbour">Visit the <a href="/archives" class="underline text-purple">archives</a></p>
 </div>
