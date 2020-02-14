@@ -23,16 +23,40 @@
 
 @font-face {
     font-family: 'Harbour-Medium';
-    src: url('../webfonts/3AE7FF_0_0.eot');
-    src: url('../webfonts/3AE7FF_0_0.eot?#iefix') 
-        format('embedded-opentype'),url('../webfonts/3AE7FF_0_0.woff2') 
-        format('woff2'),url('../webfonts/3AE7FF_0_0.woff') 
-        format('woff'),url('../webfonts/3AE7FF_0_0.ttf') 
+    src: url('/static/webfonts/3AE7FF_0_0.eot');
+    src: url('/static/webfonts/3AE7FF_0_0.eot?#iefix') 
+        format('embedded-opentype'),url('/static/webfonts/3AE7FF_0_0.woff2') 
+        format('woff2'),url('/static/webfonts/3AE7FF_0_0.woff') 
+        format('woff'),url('/static/webfonts/3AE7FF_0_0.ttf') 
         format('truetype');
 }
 
-.harbour-md {
+@font-face {
+    font-family: Nazareth-Roman;
+    src: url('/static/webfonts/Nazareth-Roman.woff2') format('woff2'),
+    url('/static/webfonts/Nazareth-Roman.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Ballast';
+    src: url('/static/webfonts/Ballast_v0_1-CondensedBold.woff2') format('woff2'),
+    url('/static/webfonts/Ballast_v0_1-CondensedBold.woff') format('woff');
+    font-weight: 700;
+}
+
+.harbour {
     font-family: Harbour-Medium;
+}
+
+.naz-roman {
+    font-family: Nazareth-Roman;
+}
+
+.ballast {
+    font-family:'Ballast';
+    font-weight:700;
+    font-kerning: normal;
+    font-feature-settings: "calt";
 }
 
 .merc-disp {

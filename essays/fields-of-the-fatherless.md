@@ -4,7 +4,7 @@ essay_title: Hearing Proverbs
 date: 2020-01-31
 verse: Do not move an ancient landmark / or enter the fields of the fatherless, / for their Redeemer is strong; / he will plead their cause against you.
 citation: Proverbs 23:10-11
-tags: ['essay', 'newest']
+tags: ['essay']
 ---
 
 <section class="essay-body">
