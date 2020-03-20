@@ -3,7 +3,7 @@ layout: essay-layout.njk
 essay_title: How I've Come to Understand Truth
 date: 2020-02-14
 subheading: Some old treasure - reckless and sentimental - dusted off and polished up for Valentine's Day.
-tags: ['essay', 'newest']
+tags: ['essay']
 --- 
 
 <section class="essay-body">
