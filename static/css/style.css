@@ -1,128 +1,267 @@
-/**
- * @license
- * MyFonts Webfont Build ID 3860479, 2020-01-27T13:37:41-0500
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: Harbour-Medium by Alias Collection
- * URL: https://www.myfonts.com/fonts/fw-alias/harbour/medium/
- * Copyright: &#x00A9; 1998 Gareth Hague
- * Licensed pageviews: 10,000
- * 
- * 
- * 
- * © 2020 MyFonts Inc
-*/
 
-/* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3ae7ff");
-
-@font-face {
-    font-family: 'Harbour-Medium';
-    src: url('/static/webfonts/3AE7FF_0_0.eot');
-    src: url('/static/webfonts/3AE7FF_0_0.eot?#iefix') 
-        format('embedded-opentype'),url('/static/webfonts/3AE7FF_0_0.woff2') 
-        format('woff2'),url('/static/webfonts/3AE7FF_0_0.woff') 
-        format('woff'),url('/static/webfonts/3AE7FF_0_0.ttf') 
-        format('truetype');
+/* GENERAL STYLES */
+:root {
+    --black: rgba(51, 51, 51, .9);
+    --white: #fefcf6;
+    --accent-color: #585873;
 }
 
-@font-face {
-    font-family: Nazareth-Roman;
-    src: url('/static/webfonts/Nazareth-Roman.woff2') format('woff2'),
-    url('/static/webfonts/Nazareth-Roman.woff') format('woff');
+* {
+    margin: 0;
+    padding: 0;
 }
 
-@font-face {
-    font-family: 'Ballast';
-    src: url('/static/webfonts/Ballast_v0_1-CondensedBold.woff2') format('woff2'),
-    url('/static/webfonts/Ballast_v0_1-CondensedBold.woff') format('woff');
-    font-weight: 700;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--black);
+    background-color: var(--white);
 }
 
-.harbour {
-    font-family: Harbour-Medium;
+h2 {
+    font-size: 49px;
 }
 
-.naz-roman {
-    font-family: Nazareth-Roman;
+h3 {
+    font-size: 39px;
 }
 
-.ballast {
-    font-family:'Ballast';
-    font-weight:700;
-    font-kerning: normal;
-    font-feature-settings: "calt";
+h4 {
+    font-size: 31px;
 }
 
-.merc-disp {
-    font-family: "Mercury Display A", "Mercury Display B";
-    font-style: normal;
-    font-weight: 400;
+h5 {
+    font-size: 25px;
 }
 
-.merc-book {
-    font-family: "Mercury SSm A", "Mercury SSm B";
-    font-style: normal;
-    font-weight: 400;
+h6 {
+    font-size: 20px;
 }
 
-.merc-g1 {
-    font-family: "Mercury Text G1 A", "Mercury Text G1 B";
-    font-style: normal;
-    font-weight: 400;
+aside {
+    padding: 1rem;
+    
 }
 
-details > summary {
-    list-style: none;
+aside p {
+    font-size: 16px;
+    padding: 0 .5rem;
 }
 
-details > summary {
-    outline: none;
+aside span {
+    color: var(--accent-color)
 }
 
-details > summary::-webkit-details-marker {
-    display: none;
-}
-
-.bg-beige {
-    background-color: #F2EFE5;
-}
-
-.text-purple {
-    color: #7c667c;
-}
-
-.text-black {
-    color: #4a4b45;
-}
-
-.text-orange {
-    color: #C13E36;
-}
-
-.outline {
-    -webkit-text-stroke-color: #4a4b45;
-    -webkit-text-stroke-width: 1px;
+aside p:nth-child(2) {
+    color: var(--accent-color);
 }
 
 header {
-    border-bottom: 1px solid #4a4b45;
+    padding: 2rem 1rem;
+    background-color: var(--accent-color);
+    color: var(--white);
 }
 
-.asterisk {
-    transform: rotate(30deg);
+header h1 {
+    line-height: .8;
+    color: var(--white);
+}
+nav {
+    margin-top: 2rem;
 }
 
-.fit {
-    display: inline-block;
-    white-space: nowrap;
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
 
-.essay-body > * {
+nav h5 {
+    color: var(--white);
+    margin: 2rem 0 .5rem 0;
+    letter-spacing: 2px;
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+main .container > * > * {
+    margin: 0.5rem;
+}
+
+.not-sidebar {
+    min-width: 80%;
+    flex-basis: 0;
+    flex-grow: 999;
     margin-bottom: 1rem;
+}
+
+.not-sidebar > section {
+    padding: 1rem 0;
+}
+
+.not-sidebar a {
+    display: block;
+    text-align: right;
+    color: var(--accent-color);
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.sidebar {
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+
+main p:first-child:first-letter {
+    color: var(--accent-color);
+    float: left;
+    font-family: "Quarto A", "Quarto B";
+    font-size: 72px;
+    padding-top: 8px;
+    padding-right: 12px;
+}
+
+main a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+  padding:1rem;
+  flex-grow: 999;
+}
+
+main h3.essay-title {
+    color: var(--black);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+main h4 {
+    color: var(--accent-color);
+    margin-bottom: 2.4rem;
+}
+
+main h6.section-header {
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    border-top: 2px solid var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+main article {
+    margin-bottom: 2rem;
+}
+
+main p {
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    font-family: "Chronicle SSm A", "Chronicle SSm B";
+    font-style: normal;
+    font-weight: 400;
+}
+
+time {
+    color: var(--accent-color);
+    font-family: "Ringside Regular A", "Ringside Regular B";
+    font-style: normal;
+    font-weight: 300;
+}
+
+footer {
+    padding: .5rem 0;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-size: 16px;
+}
+
+footer p {
+    padding: 0 .5rem;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+/* CLASSES */
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.attribution {
+    text-align: right;
+}
+
+.title, .title-2 {
+    margin: .5rem 0;
+}
+
+.title-2 { 
+    display: none;
+}
+
+/* FONTS */
+.font-quarto {
+    font-family: "Quarto A", "Quarto B";
+    font-style: normal;
+    font-weight: 600;
+}
+
+.font-chron {
+    font-family: "Chronicle SSm A", "Chronicle SSm B";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-chron-ital {
+    font-family: "Chronicle SSm A", "Chronicle SSm B";
+    font-style: italic;
+    font-weight: 400;
+}
+
+.font-ringside {
+    font-family: "Ringside Regular A", "Ringside Regular B";
+    font-style: normal;
+    font-weight: 300;
+}
+
+.font-ringside-bold {
+    font-family: "Ringside Regular A", "Ringside Regular B";
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    
+    aside p {
+        font-size: 14px;
+    }
+    
+    header p {
+        font-size: 16px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .title-2 {
+        display: block;
+    }
 }

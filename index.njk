@@ -1,21 +1,16 @@
 ---
 layout: base-layout.njk
+page_title: NEWEST ESSAY
+pagination:
+  data: collections.essay
+  size: 10
+  reverse: true
+  alias: essays
 ---
 
-<div class="py-12 merc-disp text-xl max-w-xl text-center mx-auto">
-    <p class="naz-roman text-purple outline leading-none fit">Farley Reynolds</p>
-    <p class="mt-4 mb-5 harbour leading-none text-xl tracking-wider">&mdash; ain't &mdash;</p>
+{% set essay = essays[0]%}
 
-    <p class="fit ballast outline text-orange text-center font-bold leading-none -mb-6">No Vague</p>
-    <p class="fit ballast outline text-orange text-center leading-none">Believer</p>
+<time datetime="{{ essay.date | dateIso }}">{{ essay.date | dateReadable }}</time>
+<h3 class="font-quarto essay-title">{{ essay.data.title }}</h3>
+<section class="font-chron">{{ essay.templateContent | safe }}</section>
 
-    <p class="harbour outline leading-none mt-2 mb-3 text-3xl text-purple asterisk">&#x2022;</p>
-    <p class="naz-roman text-2xl sm:text-3xl tracking-wider mb-8">Essays from the Standpoint <br > of Christian Orthodoxy</p>
-
-    {%- for newest in collections.newest %}
-        <p class="harbour">Read the <a href="{{ newest.url }}" class="underline text-purple">newest essay</a></p>
-        <p class="harbour italic leading-none my-2">or</p>
-    {%- endfor -%}
-    
-    <p class="harbour">Visit the <a href="/archives" class="underline text-purple">archives</a></p>
-</div>

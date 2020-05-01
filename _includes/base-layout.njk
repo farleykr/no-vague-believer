@@ -6,53 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NVB</title>
 
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6249038/7082012/css/fonts.css" />
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
-<body class="bg-beige text-gray-900 min-h-screen">
+<body>
+        <aside>
+            <div class="container">
+                <p class="font-chron">
+                    <span class="font-ringside-bold">"I am no vague believer.</span> 
+                    I see from the standpoint of Christian orthodoxy. 
+                    This means that for me the meaning of life is centered in our Redemption by Christ 
+                    and that what I see in the world I see its relation to that."
+                    &nbsp;<span class="font-ringside"> &mdash;Flannery O'Connor</span>
+                </p>
+            </div>
+        </aside>
         <header class="text-black">
-                <details>
-                    <summary class="px-2">
-                        <p class="harbour pt-4 pb-2 text-center tracking-widest leading-none">MENU</p>
-                    </summary>
-                    <nav class="harbour text-center pt-2 pb-4">
-                        <ul class="tracking-wide">
-                            <li class="leading-loose">
-                                <p class="text-4xl"> &#x2020; </p>
-                            </li>
-                            <li class="leading-loose">
-                                <a href="/"> home </a>
-                            </li>
-                            {%- for newest in collections.newest %}
-                            <li class="leading-loose">
-                                <a href="{{newest.url}}">newest essay</a>
-                            </li>
-                            {%- endfor -%}
-                            <li class="leading-loose">
-                                <a href="/archives">archives</a>
-                            </li>
-                            <li class="leading-loose">
-                                <a href="/about">about the name</a>
-                            </li>
-                            <li class="leading-loose">
-                                <a href="/colophon">colophon</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </details>
+            <div class="container">
+            <p class="font-ringside">
+                <span class="font-ringside-bold">Essays</span> 
+                from the Standpoint<br> of 
+                <span class="font-ringside-bold"> Christian Orthodoxy</span>
+            </p>
+            <div class="title">
+                <h1 class="font-quarto fit">NO VAGUE BELIEVER</h1>
+            </div>
+            <div class="title-2">
+                <h1 class="font-quarto fit">NO VAGUE</h1>
+                <h1 class="font-quarto fit">BELIEVER</h1>
+            </div>
+            <p class="font-ringside attribution">Words by<span class="font-ringside-bold"> Farley Reynolds</span></p>
         </header>
 
-        <main class="merc-book text-black min-h-100">
-            <div class="container mx-auto p-3 pb-3 max-w-2xl">
-                {% if page_title %}
-                    <p class="naz-roman text-5xl leading-tight tracking-wide outline mt-12 mb-8 text-purple">{{ page_title }}</p>
-                {% endif %}
-                {{ content | safe }}
+        <main>
+            <div class="container">
+                <div class="not-sidebar">
+                    {% if page_title %}
+                        <h6 class="section-header font-ringside-bold">{{ page_title }}</h6>
+                    {% endif %}
+                    {{ content | safe }}
+                </div>
+                <div class="sidebar">
+                    <h6 class="section-header font-ringside-bold">ARCHIVES</h6>
+                    {% for essay in collections.essay | reverse %}
+                        <article>
+                            <time datetime="{{ essay.date | dateIso }}">{{ essay.date | dateReadable }}</time>
+                            <h6 class="font-ringside-bold"><a href="{{ essay.url | url }}">{{ essay.data.title }}</a></h6>
+                            &mdash;
+                        </article>
+                    {% endfor %}
+                </div>
             </div>
         </main>
-
-        <script src="/static/js/fitty.min.js"></script>
-        <script src="/static/js/index.js"></script>
+        <footer>
+            <div class="container font-ringside">
+                <p>
+                    Website design by 
+                    <a href="https://farleykreynolds.com/" class="font-ringside-bold" target="_blank">
+                        Farley Reynolds
+                    </a>  
+                </p>
+                <p>
+                    Fonts by 
+                    <a href="https://www.typography.com/" class="font-ringside-bold" target="_blank">
+                        Hoefler &amp; Co.
+                    </a>
+                </p>
+            </div>
+        </footer>
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/fitty.min.js"></script>
+    <script>
+        fitty('.fit');
+    </script>
 </body>
 </html>
