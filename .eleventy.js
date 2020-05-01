@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter('dateReadable', date => {
-    return moment(date).utc().format('MMMM Do, YYYY'); // E.g. May 31, 2019
+    return moment(date).utc().format('LL'); // E.g. May 31, 2019
   });
 
   // Copy `static/` to `_site/static`

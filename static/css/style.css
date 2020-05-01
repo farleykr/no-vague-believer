@@ -1,6 +1,7 @@
 
 /* GENERAL STYLES */
 :root {
+    font-size: 18;
     --black: rgba(51, 51, 51, .9);
     --white: #fefcf6;
     --accent-color: #585873;
@@ -19,24 +20,28 @@ body {
     background-color: var(--white);
 }
 
+h1 {
+    font-size: 55px;
+}
+
 h2 {
-    font-size: 49px;
+    font-size: 44px;
 }
 
 h3 {
-    font-size: 39px;
+    font-size: 35px;
 }
 
 h4 {
-    font-size: 31px;
+    font-size: 28px;
 }
 
 h5 {
-    font-size: 25px;
+    font-size: 23px;
 }
 
 h6 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 aside {
@@ -67,6 +72,7 @@ header h1 {
     line-height: .8;
     color: var(--white);
 }
+
 nav {
     margin-top: 2rem;
 }
