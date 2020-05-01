@@ -209,12 +209,14 @@ footer a {
     text-align: right;
 }
 
-.title, .title-2 {
-    margin: .5rem 0;
-}
 
 .title-2 { 
     display: none;
+}
+
+.fit {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 /* FONTS */
