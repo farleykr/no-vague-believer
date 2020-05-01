@@ -2,22 +2,27 @@
 layout: base-layout.njk
 ---
 
-<p class="harbour text-3xl leading-tight mt-16 mb-2 text-orange">{{ essay_title }}</p>
+<h6 class="section-header">
+    <time class="font-ringside-bold" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+</h6>
+
+<h3 class="font-quarto essay-title">{{ title }}</h3>
 
 {% if verse %}
-<p class="italic mt-4 mb-2">
+    <p class="font-chron-ital">
     {{ verse }}
-</p>
+    {% if citation %}
+    <span class="font-ringside"> &nbsp; &mdash;{{ citation }}</span>
 {% endif %}
-
-{% if citation %}
-<p class="harbour italic mb-10">&mdash; {{ citation }}</p>
+    </p>
 {% endif %}
 
 {% if subheading %}
-<p class="italic mb-10">&mdash; {{ subheading }}</p>
+    <p class="font-chron-ital">{{ subheading }}</p>
 {% endif %}
 
-{{ content | safe }}
+<div class="font-chron">
+    {{ content | safe }}
+</div>
 
-<p class="mb-6 mt-8 text-right italic">&mdash; <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time></p>
+<a href="/" class="font-ringside-bold">BACK HOME</a>
