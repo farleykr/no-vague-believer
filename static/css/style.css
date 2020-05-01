@@ -122,8 +122,9 @@ main p:first-child:first-letter {
     float: left;
     font-family: "Quarto A", "Quarto B";
     font-size: 72px;
-    padding-top: 8px;
-    padding-right: 12px;
+    margin-right: 8px;
+    margin-top: 8px;
+    line-height: .6;
 }
 
 main a {
