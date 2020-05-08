@@ -153,9 +153,8 @@ main {
 }
 
 main h3.essay-title {
+    margin: .5rem;
     color: var(--black);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 
 main h4 {
@@ -167,7 +166,7 @@ main h6.section-header {
     letter-spacing: 2px;
     color: var(--accent-color);
     border-top: 2px solid var(--accent-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 main article {
