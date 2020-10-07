@@ -1,0 +1,31 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3955764, 2020-10-03T13:50:06-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Harbour-Medium by Alias Collection
+ * URL: https://www.myfonts.com/fonts/fw-alias/harbour/medium/
+ * Copyright: &amp;#x00A9; 1998 Gareth Hague
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3c5c34");
+  
+@font-face {
+  font-family: 'Harbour-Medium';
+  src: url('/static/fonts/Harbour-Medium/font.woff2') format('woff2'), url('static/fonts/Harbour-Medium/font.woff') format('woff');
+}
+
+.harbour-md {
+  font-family: Harbour-Medium;
+}

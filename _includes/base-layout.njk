@@ -1,82 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NVB</title>
 
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6249038/7082012/css/fonts.css" />
+    <title>No Vague Believer</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Spectral&family=Work+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/MyFontsWebfontsKit.css">
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
-<body>
-        <aside>
-            <div class="container">
-                <p class="font-chron">"<span class="font-ringside-bold">I am no vague believer.</span> 
-                    I see from the standpoint of Christian orthodoxy. 
-                    This means that for me the meaning of life is centered in our Redemption by Christ 
-                    and that what I see in the world I see its relation to that."
-                    &nbsp;<span class="font-ringside"> &mdash;Flannery O'Connor</span>
-                </p>
-            </div>
-        </aside>
-        <header class="text-black">
-            <div class="container">
-            <p class="font-ringside">
-                <span class="font-ringside-bold">Essays</span> 
-                from the <br> Standpoint of 
-                <span class="font-ringside-bold"> Christian Orthodoxy</span>
-            </p>
-            <div class="title">
-                <h1 class="fit font-quarto">NO VAGUE BELIEVER</h1>
-            </div>
-            <div class="title-2">
-                <h1 class="font-quarto">NO VAGUE</h1>
-                <h1 class="fit font-quarto">BELIEVER</h1>
-            </div>
-            <p class="font-ringside attribution">Words by<span class="font-ringside-bold"> Farley Reynolds</span></p>
-            </div>
-        </header>
 
-        <main>
-            <div class="container">
-                <div class="not-sidebar">
-                    {% if page_title %}
-                        <h6 class="section-header font-ringside-bold">{{ page_title }}</h6>
-                    {% endif %}
-                    {{ content | safe }}
-                </div>
-                <div class="sidebar">
-                    <h6 class="section-header font-ringside-bold">ARCHIVES</h6>
-                    {% for essay in collections.essay | reverse %}
-                        <article>
-                            <time datetime="{{ essay.date | dateIso }}">{{ essay.date | dateReadable }}</time>
-                            <h6 class="font-ringside-bold"><a href="{{ essay.url | url }}">{{ essay.data.title }}</a></h6>
-                            &mdash;
-                        </article>
-                    {% endfor %}
+<body class="d-flex flex-column h-100 bg-light source-serif-pro">
+    <header class="text-center flex-shrink-0 py-3">
+        <ul class="nav justify-content-center align-items-baseline source-code-pro">
+            <li class="nav-item">
+                <a class="nav-link text-decoration-underline text-dark" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-decoration-underline text-dark" href="/archive">ARCHIVE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-decoration-underline text-dark" href="/subscribe">SUBSCRIBE</a>
+            </li>
+        </ul>
+        <div class="container pt-4 pb-3 harbour-md">
+            <a class="text-decoration-none text-dark" href="/">
+                <h1 class="display-1 text-purple">NO VAGUE BELIEVER</h1> 
+            </a>
+            <p class="tagline text-purple">Essays from the standpoint of Christian orthodoxy</p>
+        </div>
+    </header>
+
+    <main class="py-3 flex-shrink-0 bg-white border-top border-bottom">
+        <div class="container">
+            {{ content | safe }}
+        </div>
+    </main>
+
+    <footer class="mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <ul class="nav source-code-pro mb-2">
+                        <li class="nav-item">
+                            <a class="pl-0 nav-link text-decoration-underline text-dark" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-underline text-dark" href="/archive">ARCHIVE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-underline text-dark" href="/subscribe">SUBSCRIBE</a>
+                        </li>
+                    </ul>
+                    <p> 
+                        Writing and website design by 
+                        <a href="https://farleykreynolds.com/" target="_blank">
+                            Farley Reynolds
+                        </a>  
+                    </p>
+                    <p>
+                     "I am <span class="harbour-md text-purple">no vague believer</span>. I see from the standpoint of Christian orthodoxy. This means that for me the meaning of life is centered in our Redemption by Christ and that what I see in the world I see its relation to that."   —Flannery O'Connor
+                    </p>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="container font-ringside">
-                <p>
-                    Website design by 
-                    <a href="https://farleykreynolds.com/" class="font-ringside-bold" target="_blank">
-                        Farley Reynolds
-                    </a>  
-                </p>
-                <p>
-                    Fonts by 
-                    <a href="https://www.typography.com/" class="font-ringside-bold" target="_blank">
-                        Hoefler &amp; Co.
-                    </a>
-                </p>
-            </div>
-        </footer>
-    <script src="/static/js/fitty.min.js"></script>
-    <script>
-        fitty('.fit');
-    </script>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
 </body>
 </html>

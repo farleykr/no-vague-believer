@@ -1,28 +1,28 @@
 ---
 layout: base-layout.njk
 ---
+<div class="row">
+    <div class="col-lg-8 mx-auto mb-5">
+        <div class="d-flex flex-column align-items-center my-3">
+            <time class="source-code-pro text-muted" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+            <h1 class="harbour-md text-purple text-center">{{ title }}</h1>
+        </div>
+        {% if verse %}
+            <p class="text-center text-muted font-italic">
+            {{ verse }}
+            {% if citation %}
+                <br>
+                <span> &mdash; {{ citation }}</span>
+            {% endif %}
+            </p>
+        {% endif %}
 
-<h6 class="section-header">
-    <time class="font-ringside-bold" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-</h6>
+        {% if subheading %}
+            <p class="font-italic text-muted text-center">{{ subheading }}</p>
+        {% endif %}
+        
+        {{ content | safe }}
 
-<h3 class="font-quarto essay-title">{{ title }}</h3>
-
-{% if verse %}
-    <p class="font-chron-ital">
-    {{ verse }}
-    {% if citation %}
-    <span class="font-ringside"> &nbsp; &mdash;{{ citation }}</span>
-{% endif %}
-    </p>
-{% endif %}
-
-{% if subheading %}
-    <p class="font-chron-ital">{{ subheading }}</p>
-{% endif %}
-
-<div class="font-chron">
-    {{ content | safe }}
+        <a class="source-code-pro" href="/">BACK HOME</a>
+    </div>
 </div>
-
-<a href="/" class="font-ringside-bold">BACK HOME</a>

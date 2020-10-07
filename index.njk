@@ -1,6 +1,5 @@
 ---
 layout: base-layout.njk
-page_title: NEWEST ESSAY
 pagination:
   data: collections.essay
   size: 10
@@ -9,8 +8,43 @@ pagination:
 ---
 
 {% set essay = essays[0]%}
+<div class="row">
+  <div class="col-lg-8 mx-auto pt-3">
+    <div class="mb-5">
+        <h5 class="work-sans pb-2 mb-4 border-bottom">NEWEST ESSAY</h5>
+        <time class="source-code-pro text-muted" datetime="{{ essay.date | dateIso }}">{{ essay.date | dateReadable }}</time>
+        <h3 class="harbour-md"><a href="{{ essay.url | url }}">{{ essay.data.title }}</a></h3>
+        <section class="mb-0">
+          {{ essay.templateContent | safe | truncate(150)}}
+          <a class="" href="{{ essay.url | url }}">Continue reading</a>
+        </section> 
+    </div>
+  
+    <div class="mb-5">
+        <h5 class="work-sans pb-2 mb-4 border-bottom">ARCHIVE</h5>
+        {% for essay in collections.essay | reverse %}
+            <article class="mb-4">
+              <time class="source-code-pro text-muted" datetime="{{ essay.date | dateIso }}">{{ essay.date | dateReadable }}</time>
+                <h5 class="harbour-md mb-1"><a href="{{ essay.url | url }}">{{ essay.data.title }}</a></h5>
+            </article>
+        {% endfor %}
+    </div>
 
-<time datetime="{{ essay.date | dateIso }}">{{ essay.date | dateReadable }}</time>
-<h3 class="font-quarto essay-title">{{ essay.data.title }}</h3>
-<section class="font-chron">{{ essay.templateContent | safe }}</section>
+    <div class="mb-5">
+        <h5 class="work-sans pb-2 mb-4 border-bottom">SUBSCRIBE</h5>
+        <p class="text-center font-italic">Sign up to receive new essays in your email inbox as they are published.</p>
+        <form class="text-center" action="https://tinyletter.com/novaguebeliever" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/novaguebeliever', 'popupwindow');return true">
 
+          <label class="form-label text-muted" for="tlemail">Email address:</label>
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <input class="form-control text-center" type="text" name="email" id="tlemail" />
+            </div>
+          </div>
+          
+          <input type="hidden" value="1" name="embed"/>
+          <input class="my-3 btn btn-outline-dark harbour-md" type="submit" value="Subscribe" />
+          <a class="d-block" href="https://tinyletter.com" target="_blank">(powered by TinyLetter)</a>
+        </form>
+    </div>
+</div>

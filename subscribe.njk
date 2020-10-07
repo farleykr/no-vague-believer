@@ -1,0 +1,28 @@
+---
+layout: base-layout.njk
+page_title: SUBSCRIBE
+---
+
+<div class="row">    
+    <div class="col-lg-8 mx-auto mb-5">
+        <div class="d-flex flex-column align-items-center my-3">
+            <h2 class="harbour-md text-purple">{{ page_title }}</h2>
+        </div>
+        <div class="mb-5">
+        <p class="text-center font-italic">Sign up to receive new essays in your email inbox as they are published.</p>
+        <form class="text-center" action="https://tinyletter.com/novaguebeliever" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/novaguebeliever', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+
+          <label class="form-label text-muted" for="tlemail">Email address:</label>
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+            <input class="form-control text-center" type="text" name="email" id="tlemail" />
+            </div>
+          </div>
+          
+          <input type="hidden" value="1" name="embed"/>
+          <input class="my-3 btn btn-outline-dark harbour-md" type="submit" value="Subscribe" />
+          <a class="d-block" href="https://tinyletter.com" target="_blank">(powered by TinyLetter)</a>
+        </form>
+    </div>
+    </div>
+</div>
