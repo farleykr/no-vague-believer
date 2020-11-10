@@ -1,5 +1,5 @@
 :root {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 * {
@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.4em;
     line-height: .9;
     margin-bottom: .8rem;
 }
@@ -34,7 +34,7 @@ p {
 }
 
 a {
-    color: #7d3c66;
+    color: #981f88;
 }
 
 hr {
@@ -51,6 +51,7 @@ li {
 
 time {
     font-style: italic;
+    text-align: right;
 }
 
 article {
@@ -141,7 +142,7 @@ footer > .center > ul > li {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem 0;
-    max-width: 80ch;
+    max-width: 70ch;
 }
 
 .toc-header {
@@ -154,4 +155,13 @@ footer > .center > ul > li {
 .attribution {
     margin-top: 1rem;
     letter-spacing: 4px;
+}
+
+br {
+    display: block;
+}
+@media screen and (min-width: 500px) {
+    br {
+        display: none;
+    }
 }

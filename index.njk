@@ -12,12 +12,12 @@ pagination:
 {% for essay in collections.essay | reverse %}
     <article>
         <div class="toc-header">
-            <p>
-                <strong><em><a href="{{ essay.url | url }}">{{ essay.data.title }}</a></em></strong>
-            </p>
+            <h3>
+                <em><a href="{{ essay.url | url }}">{{ essay.data.title }}</a></em>
+            </h3>
 
             <time datetime="{{ essay.date | dateIso }}">
-                {{ essay.date | dateReadable }}
+                <em>{{ essay.date | dateReadable }}</em>
             </time>
         </div>
         <section>
