@@ -1,27 +1,157 @@
 :root {
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.source-serif-pro {
-    font-family: 'Spectral', serif;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.source-code-pro {
-    font-family: 'Source Code Pro', monospace;
+html {
+    color: #323232;
 }
 
-.work-sans {
-    font-family: 'Work Sans', sans-serif;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
-.text-purple {
-    color: #585873;
+h1 {
+    font-size: 4em;
+    line-height: .9;
+    margin-bottom: .8rem;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.4;
+    margin-bottom: .8rem;
 }
 
 a {
-    color: #585873;
+    color: #7d3c66;
+}
+
+hr {
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+li {
+    list-style: none;
 }
 
 time {
-    font-size: .9rem;
+    font-style: italic;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+article > section {
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+article > time {
+    display: block;
+    margin: 1rem 0;
+    text-align: right;
+}
+
+section#subscribe {
+    text-align: center;
+}
+
+section > p {
+    margin: 1rem 0;
+}
+
+section > form {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+header {
+    padding: 0 1rem;
+}
+
+header > .center > ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+header > .center > p:nth-child(4) {
+    margin-bottom: 0;
+}
+
+nav {
+    margin-bottom: 2em;
+    padding: 0 1rem;
+}
+
+nav > .center {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+nav > .center > ul {
+    display: flex;
+}
+
+nav > .center > ul > li {
+    margin-right: 1rem;
+}
+
+main {
+    padding: 0 1rem;
+    flex-grow: 2;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    border-top: 1px solid #000000;
+}
+
+footer > .center > ul {
+    display: flex;
+    padding: 1rem 0;
+}
+
+footer > .center > ul > li {
+    margin-right: 1em;
+}
+
+.center {
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+    max-width: 80ch;
+}
+
+.toc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: -.6rem;
+}
+
+.attribution {
+    margin-top: 1rem;
+    letter-spacing: 4px;
 }

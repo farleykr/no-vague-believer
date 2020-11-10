@@ -23,9 +23,6 @@
   
 @font-face {
   font-family: 'Harbour-Medium';
-  src: url('/static/fonts/Harbour-Medium/font.woff2') format('woff2'), url('static/fonts/Harbour-Medium/font.woff') format('woff');
+  src: url('webFonts/Harbour-Medium/font.woff2') format('woff2'), url('webFonts/Harbour-Medium/font.woff') format('woff');
 }
 
-.harbour-md {
-  font-family: Harbour-Medium;
-}

@@ -15,7 +15,7 @@ Wesley: "No, no, no.  There's a difference between *hearing* and *listening*.  Y
 
 Whenever I approach Proverbs, I hear Wesley Snipes and Woody Harrelson bickering in the back of my mind.  I yearn to hear some good news and I don't want to miss it.  I've been wondering for a long time - can I hear Proverbs, or am I just listening to it?  The other morning I put my ear to it, tried to listen, and this is what I heard:
 
-*Do not move an ancient landmark / or enter the fields of the fatherless, / for their Redeemer is strong; / he will plead their cause against you.*
+>Do not move an ancient landmark / or enter the fields of the fatherless, / for their Redeemer is strong; / he will plead their cause against you.
 
 Yahweh, our Abba, is the Redeemer of the fatherless.  This redeeming is not something He does. Redemption is an intrinsic part of Him.  To run the risk of putting too fine a point on it, He *is a redeemer*.  Take away the redemption and God doesn't become less than Himself.  He becomes something else altogether.  Maybe he becomes an impotent old man, floating in space.
 

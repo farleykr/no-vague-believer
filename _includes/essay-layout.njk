@@ -1,28 +1,24 @@
 ---
 layout: base-layout.njk
 ---
-<div class="row">
-    <div class="col-lg-8 mx-auto mb-5">
-        <div class="d-flex flex-column align-items-center my-3">
-            <time class="source-code-pro text-muted" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
-            <h1 class="harbour-md text-purple text-center">{{ title }}</h1>
-        </div>
-        {% if verse %}
-            <p class="text-muted font-italic">
-            {{ verse }}
+<article>
+    <h2>{{ title }}</h2>
+
+    <time datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+
+    {% if verse %}
+        <p>
+            <em>{{ verse }}</em>
             {% if citation %}
                 <br>
-                <span> &mdash; {{ citation }}</span>
+                <em><span> &mdash; {{ citation }}</span></em>
             {% endif %}
-            </p>
-        {% endif %}
+        </p>
+    {% endif %}
 
-        {% if subheading %}
-            <p class="font-italic text-muted">{{ subheading }}</p>
-        {% endif %}
-        
-        {{ content | safe }}
+    {% if subheading %}
+        <p><em>{{ subheading }}</em></p>
+    {% endif %}
 
-        <a class="source-code-pro" href="/">BACK HOME</a>
-    </div>
-</div>
+    {{ content | safe }}
+</article>

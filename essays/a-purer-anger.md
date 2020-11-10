@@ -23,18 +23,15 @@ Too much water and the roots rot, which prevents water from being taken in. Too 
 
 We are trees and anger is heat. Our water is to meditate on the law of the Lord day and night.
 
-<p class="work-sans">
-...his delight is in the law of the Lord, / and on his law he meditates day and night. / He is like a tree / planted by streams of water / that yields its fruit in its season, / and its leaf does not wither.
-—Psalm 1:2-3
-</p>
+>...his delight is in the law of the Lord, / and on his law he meditates day and night. / He is like a tree / planted by streams of water / that yields its fruit in its season, / and its leaf does not wither.
+>—Psalm 1:2-3
+
 
 
 Heat is not strictly detrimental to a tree, to be removed and forgotten about. When spring arrives each year the lengthening daylight hours and increasing heat trigger hormone responses in the tree that are responsible for growth. And neither is anger strictly detrimental. It is the fallen form of a good and beautiful emotion we were endowed with by our creator.
 
-<p class="work-sans">
-Be angry, and do not sin; / Ponder in your own hearts on your / beds, and be silent.
-—Psalm 4:4
-</p>
+>Be angry, and do not sin; / Ponder in your own hearts on your / beds, and be silent.
+>—Psalm 4:4
 
 Just as heat in the right proportion catalyzes growth in a tree, so anger is a catalyst. If you are angry, be angry. But also be steeped in the word lest your leaves burn. I don't know how to be angry and not sin. I do know you can make a whip and use it to drive a crowd out of a temple without sinning.
 

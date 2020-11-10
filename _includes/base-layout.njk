@@ -1,75 +1,66 @@
 <!DOCTYPE html>
-<html class="h-100" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>No Vague Believer</title>
+        <link rel="stylesheet" href="/static/css/MyFontsWebfontsKit.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
 
-    <title>No Vague Believer</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Spectral&family=Work+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/MyFontsWebfontsKit.css">
-    <link rel="stylesheet" href="/static/css/style.css">
-</head>
-
-<body class="d-flex flex-column h-100 bg-light source-serif-pro">
-    <header class="text-center flex-shrink-0 py-3">
-        <ul class="nav justify-content-center align-items-baseline source-code-pro">
-            <li class="nav-item">
-                <a class="nav-link text-decoration-underline text-dark" href="/">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-decoration-underline text-dark" href="/archive">ARCHIVE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-decoration-underline text-dark" href="/subscribe">SUBSCRIBE</a>
-            </li>
-        </ul>
-        <div class="container pt-4 pb-3 harbour-md">
-            <a class="text-decoration-none text-dark" href="/">
-                <h1 class="display-1 text-purple">NO VAGUE BELIEVER</h1> 
-            </a>
-            <p class="tagline text-purple">Essays from the standpoint of Christian orthodoxy</p>
-        </div>
-    </header>
-
-    <main class="py-3 flex-shrink-0 bg-white border-top border-bottom">
-        <div class="container">
-            {{ content | safe }}
-        </div>
-    </main>
-
-    <footer class="mt-auto py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <ul class="nav source-code-pro mb-2">
-                        <li class="nav-item">
-                            <a class="pl-0 nav-link text-decoration-underline text-dark" href="/">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-underline text-dark" href="/archive">ARCHIVE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-underline text-dark" href="/subscribe">SUBSCRIBE</a>
-                        </li>
-                    </ul>
-                    <p> 
-                        Writing and website design by 
-                        <a href="https://farleykreynolds.com/" target="_blank">
-                            Farley Reynolds
-                        </a>  
-                    </p>
-                    <p>
-                     "I am <span class="harbour-md text-purple">no vague believer</span>. I see from the standpoint of Christian orthodoxy. This means that for me the meaning of life is centered in our Redemption by Christ and that what I see in the world I see its relation to that."   —Flannery O'Connor
-                    </p>
-                </div>
+    <body>
+        <header>
+            <div class="center">
+                <p class="attribution">FARLEY REYNOLDS</p>
+                <h1 class="harbour-md">No Vague Believer</h1>
+                <p>
+                    <em>Essays from the standpoint of Christian orthodoxy</em>
+                </p>
             </div>
-        </div>
-    </footer>
+        </header>
+        <nav>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/subscribe">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="center">
+                {{ content | safe }}
+            </div>
+        </main>
 
-    <!-- JavaScript Bundle with Popper.js -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-</body>
+        <footer>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/subscribe">Subscribe</a>
+                    </li>
+                </ul>
+                <p>
+                    <em>
+                    "I am no vague believer. I see from the standpoint of Christian orthodoxy. This means that for me the meaning of life is centered in our Redemption by Christ and that what I see in the world I see its relation to that."
+                    <br>
+                    &mdash;Flannery O'Connor
+                    </em>
+                </p>
+                <p> 
+                    Writing and website design by 
+                    <a href="https://farleykreynolds.com/" target="_blank">
+                        Farley Reynolds
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>

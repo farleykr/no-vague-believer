@@ -7,7 +7,7 @@ date: 2020-10-08
 tags: ['essay']
 --- 
 
-There aren't many things I love more than sleep.  Not just at night but daytime naps too--especially naps.  I've been taking regular naps since high school.  The more frequent they are and the longer they last, the better. Sometimes I can nap for as long as three hours.
+There aren't many things I love more than sleep.  Not just at night but daytime naps too—especially naps.  I've been taking regular naps since high school.  The more frequent they are and the longer they last, the better. Sometimes I can nap for as long as three hours.
 
 I've got not just a weighted blanket but a weighted sleep mask too. I practice a technique the Army teaches soldiers to help them sleep in breaks during battles.  The gist of it is to relax the muscles in your face and picture a peaceful scenario, like swinging in a hammock under shade trees.  I'm reading a book about the nature of sleep and dreams so I can learn how to further optimize my sleep habits.  The book recommends at least eight hours a night and a daytime nap.  I take melatonin, although the book isn't big on it.
 
