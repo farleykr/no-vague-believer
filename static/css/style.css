@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Hercules';
+    src: url('/static/fonts/Hercules.woff');
+}
+
+@font-face {
+    font-family: 'Hercules-text';
+    src: url('/static/fonts/HerculesText.woff');
+}
+
 :root {
     font-size: 18px;
 }
@@ -9,6 +19,7 @@
 
 html {
     color: #323232;
+    font-family: Hercules-text;
 }
 
 body {
@@ -18,14 +29,36 @@ body {
     align-content: space-between;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Hercules;
+}
+
 h1 {
-    font-size: 3.4em;
-    line-height: .9;
-    margin-bottom: .8rem;
+    font-size: 5.6em;
+    letter-spacing: 5px;
+    margin: .1em 0;
 }
 
 h2 {
+    font-size: 3.9rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 1.9rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+.essay-title {
+    letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 p {
@@ -62,13 +95,9 @@ article > section {
     text-align: left;
 }
 
-h2 {
-    text-align: center;
-}
-
 article > time {
     display: block;
-    margin: 1rem 0;
+    margin: 1.8rem 0 1rem 0;
     text-align: right;
 }
 
@@ -86,6 +115,7 @@ section > form {
 }
 
 header {
+    text-align: center;
     padding: 0 1rem;
 }
 
@@ -117,6 +147,12 @@ nav > .center > ul > li {
     margin-right: 1rem;
 }
 
+nav > .center > ul > li:last-child {
+    margin-left: auto;
+    margin-right: 0;
+
+}
+
 main {
     padding: 0 1rem;
     flex-grow: 2;
@@ -145,23 +181,37 @@ footer > .center > ul > li {
     max-width: 70ch;
 }
 
-.toc-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: -.6rem;
-}
-
 .attribution {
-    margin-top: 1rem;
+    margin: 1rem 0;
     letter-spacing: 4px;
 }
 
-br {
-    display: block;
+.toc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-@media screen and (min-width: 500px) {
-    br {
-        display: none;
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3.4rem;
     }
+    
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    
+    h3 {
+        font-size: 1.9rem;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+    }
+    
+    h5 {
+        font-size: 1.2rem;
+    }
+    
 }
