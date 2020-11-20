@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 5.6em;
     letter-spacing: 5px;
-    margin: .1em 0;
 }
 
 h2 {
@@ -85,6 +84,7 @@ li {
 time {
     font-style: italic;
     text-align: right;
+    display: block;
 }
 
 article {
@@ -182,19 +182,39 @@ footer > .center > ul > li {
 }
 
 .attribution {
-    margin: 1rem 0;
     letter-spacing: 4px;
+    margin-bottom: .4rem;
 }
 
 .toc-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
+}
+
+.toc-header > p {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.site-title {
+    letter-spacing: 5px;
+    margin-bottom: -.6rem;
+}
+
+.subtitle {
+    margin-top: .4rem;
+}
+
+.bar {
+    width: 150px;
+    border-top: 1px solid #323232;
+    margin: .5rem auto;
 }
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 3.4rem;
+        font-size: 3.3rem;
     }
     
     h2 {
@@ -214,4 +234,7 @@ footer > .center > ul > li {
         font-size: 1.2rem;
     }
     
+    .site-title {
+        margin-bottom: 0;
+    }
 }
