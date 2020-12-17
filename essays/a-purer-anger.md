@@ -7,7 +7,7 @@ tags: ['essay']
 
 Harry Crews, one of my favorite authors, said this about anger:
 
-"Shrinks and psychiatrists and so on say that anger and rage is a bad thing: A debilitating emotion. You ought to purge yourself of it. I find it a—the greatest motivating force I know."
+"Shrinks and psychiatrists and so on say that anger and rage is a bad thing: A debilitating emotion. You ought to purge yourself of it. I find it a—the greatest motivating force I know."
 
 Despite my adoration of his personality and writing, I've always wanted him to be wrong. I've fought hard against his rightness about anger. I've spent a lot of time keeping my anger down, all the while thinking I was soothing it away.
 
